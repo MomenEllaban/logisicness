@@ -68,7 +68,7 @@ a{
   transition: all 1s;
 } */
 .navbar-brand .logo_home {
-  width: 220px;
+  /* width: 220px; */
 }
 
 .navbar-brand img {
