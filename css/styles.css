@@ -437,7 +437,7 @@ ul.Service_ul li:before {
   padding:  0px;
   transition: transform 0.3s ease-in-out;
   display: grid;
-  grid-template-rows: auto auto;
+  grid-template-rows: auto 1fr;
 }
 
 .services-grid .card.service:hover {
