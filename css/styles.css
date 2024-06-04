@@ -53,22 +53,28 @@ a{
 }
 
 .navbar-brand img {
-  height: 50px;
+  /* height: 80px; */
+  width: 10rem;
+
 }
 
-.navbar-transparent .navbar-brand svg {
-  width: 185px;
-  height: 87px;
+.navbar-transparent .navbar-brand img {
+  /* width: 185px;
+  height: 87px; */
+  /* width: 20%; */
 }
 
 /* .navbar-brand {
   transition: all 1s;
 } */
+.navbar-brand .logo_home {
+  width: 220px;
+}
 
-.navbar-brand svg {
-  transition: all .5s;
+.navbar-brand img {
+  /* transition: all .5s;
   width: 111px;
-  height: 30px;
+  height: 30px; */
 }
 
 .navbar-transparent {
@@ -384,7 +390,7 @@ ul.Service_ul li:before {
 
 
 
-.loader {
+/* .loader {
   position: fixed;
   left: 0px;
   top: 0px;
@@ -394,8 +400,32 @@ ul.Service_ul li:before {
   background: url("../imgs/container.gif") 50% 50% no-repeat rgb(255, 255, 255);
   background-size: 10%;
   transition: all 5000ms;
+} */
+
+.loader-overlay {
+  width: 100%;
+  height: 100%;
+  background-color: #0c3642dc;
+  z-index: 9999;
+  position: fixed;
+  transition: all 2s;
+}
+.loader {
+  width: 120px;
+  height: 120px;
+  position: fixed;
+  left: calc(50% - 60px);
+  top: calc(50% - 60px);
+  border: 16px solid #f3f3f3; /* Light grey */
+  border-top: 16px solid #3498db; /* Blue */
+  border-radius: 50%;
+  animation: spin 2s linear infinite;
 }
 
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
 
 
 .services-grid {

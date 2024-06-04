@@ -68,16 +68,20 @@ function toggleNavbarStyle() {
   const navbar = document.querySelector(".navbar");
 
   // comment bellow
-  const navbarBrandSVG = document.querySelector(".navbar .navbar-brand>svg");
+  const navbarBrandSVG = document.querySelector(".navbar .navbar-brand>img");
   if (scrollY > 170) {
     navbar.classList.remove("navbar-transparent");
     navbar.classList.add("navbar-sticky");
     // navbarBrandSVG.setAttribute("viewBox", "0 0 1831 515");
     navbarBrandSVG.setAttribute("viewBox", "280 515 1400 380");
+    document.querySelector('.navbar-brand .logo_body').classList.remove('hidden')
+    document.querySelector('.navbar-brand .logo_home').classList.add('hidden')
   } else {
     navbar.classList.remove("navbar-sticky");
     navbar.classList.add("navbar-transparent");
     navbarBrandSVG.setAttribute("viewBox", "0 0 1855 870");
+    document.querySelector('.navbar-brand .logo_body').classList.add('hidden')
+    document.querySelector('.navbar-brand .logo_home').classList.remove('hidden')
   }
 
   //alternate
@@ -89,7 +93,8 @@ function toggleNavbarStyle() {
 ////////////////////////// START EVENT LISTENERS ////////////////////////////
 /////////////////////////////////////////////////////////////////////////////
 
-addEventListener("DOMContentLoaded", () => {
+addEventListener("load", () => {
+// addEventListener("DOMContentLoaded", () => {
   toggleNavbarStyle();
   addEventListener("scroll", () => {
     toggleNavbarStyle();
@@ -138,10 +143,17 @@ addEventListener("DOMContentLoaded", () => {
     );
 
   try {
-    document.querySelector('.loader').style.opacity = 0;
     setTimeout(() => {
-      document.querySelector('.loader').style.display = 'none';
-    }, 5000);
+      document.querySelector('.loader-overlay').style.opacity = 0;  
+    }, 1000);
+
+    setTimeout(() => {
+        document.querySelector('.loader-overlay').style.display = 'none';
+    }, 2000);
+    // document.querySelector('.loader').style.opacity = 0;
+    // setTimeout(() => {
+    //   document.querySelector('.loader').style.display = 'none';
+    // }, 5000);
   } catch (error) { }
 
 });
