@@ -72,6 +72,7 @@ function toggleNavbarStyle() {
   if (scrollY > 170) {
     navbar.classList.remove("navbar-transparent");
     navbar.classList.add("navbar-sticky");
+    navbar.classList.remove("nav-colored");
     // navbarBrandSVG.setAttribute("viewBox", "0 0 1831 515");
     navbarBrandSVG.setAttribute("viewBox", "280 515 1400 380");
     document.querySelector('.navbar-brand .logo_body').classList.remove('hidden')
@@ -79,6 +80,7 @@ function toggleNavbarStyle() {
   } else {
     navbar.classList.remove("navbar-sticky");
     navbar.classList.add("navbar-transparent");
+    navbar.classList.add("nav-colored");
     navbarBrandSVG.setAttribute("viewBox", "0 0 1855 870");
     document.querySelector('.navbar-brand .logo_body').classList.add('hidden')
     document.querySelector('.navbar-brand .logo_home').classList.remove('hidden')
@@ -89,13 +91,36 @@ function toggleNavbarStyle() {
   // navbar.classList.add("navbar-sticky");
 }
 
+
+
+
+
+
+
 /////////////////////////////////////////////////////////////////////////////
 ////////////////////////// START EVENT LISTENERS ////////////////////////////
 /////////////////////////////////////////////////////////////////////////////
 
+function applyStyles() {
+    setTimeout(() => {
+      const navbCollapse = document.querySelector('.navbar-collapse.collapse');
+      if (navbCollapse) {
+        if (window.matchMedia('(max-width: 991px)').matches && navbCollapse.classList.contains('show')) {
+          navbCollapse.closest('.navbar').classList.add('nav-colored');
+        } else {
+          navbCollapse.closest('.navbar').classList.remove('nav-colored');
+        }
+      }
+    }, 380);
+}
 addEventListener("load", () => {
-// addEventListener("DOMContentLoaded", () => {
+  // addEventListener("DOMContentLoaded", () => {
+
+  applyStyles();
+  addEventListener('resize', applyStyles);
+  
   toggleNavbarStyle();
+  // toggleNavbarlog();
   addEventListener("scroll", () => {
     toggleNavbarStyle();
 

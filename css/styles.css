@@ -567,3 +567,9 @@ ul.Service_ul li:before {
 .item6{
   background-image: url('../imgs/slider/6.png');
 }
+
+
+
+.nav-colored {
+  background-color: rgba(0, 0, 0, 0.26); 
+}
