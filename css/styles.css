@@ -586,3 +586,13 @@ ul.Service_ul li:before {
 .nav-colored {
   background-color: rgba(0, 0, 0, 0.26); 
 }
+
+.subcateogry h4{
+  font-weight: 600;
+}
+
+
+.subcateogry span ,li{
+  font-size: 1.3rem;
+}
+
