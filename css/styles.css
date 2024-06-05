@@ -374,6 +374,8 @@ ul.Service_ul li:before {
   left: 0%;
   padding-top: 1rem;
   padding-left: 15%;
+  padding-right: 12%;
+
 
   /* transform: translateY(60%); */
   /* z-index: 1; */
