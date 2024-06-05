@@ -4,16 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" href="./imgs/fav.png" type="image/x-icon">
+    <link rel="icon" href="../imgs/fav.png" type="image/x-icon">
     <title>Logisticness</title>
-    <base href="../">
-    <link rel="stylesheet" href="./css/all.min.css">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="../css/all.min.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/styles.css">
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-storage.js"></script>
-    <script src="./js/config.js"></script>
+    <script src="../js/config.js"></script>
 </head>
 
 <body>
@@ -23,11 +22,11 @@
     <!-- <div class="loader"></div> -->
     <nav class="navbar navbar-expand-lg navbar-dark navbar-transparent fixed-top">
         <div class="container-md">
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="../index.html">
 
 
-                <img class="logo_home" src="imgs/logo/wlogo2.png" alt="">
-                <img class="logo_body hidden" src="imgs/logo/wlogo33.png" alt="">
+                <img class="logo_home" src="../imgs/logo/wlogo2.png" alt="">
+                <img class="logo_body hidden" src="../imgs/logo/wlogo33.png" alt="">
 
 
             </a>
@@ -38,11 +37,11 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul id="custom-nav-links" class="navbar-nav mt-4 mt-lg-0 ms-auto gap-lg-4">
-                    <li class="nav-item"><a class="nav-link active" href="./index.html#home">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="./index.html#about-us">About Us</a></li>
-                    <li class="nav-item"><a class="nav-link" href="./index.html#services">Services</a></li>
-                    <li class="nav-item"><a class="nav-link" href="./index.html#career">Career</a></li>
-                    <li class="nav-item"><a class="nav-link" href="./index.html#meet-us">Contact us</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="../index.html#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../index.html#about-us">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../index.html#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../index.html#career">Career</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../index.html#meet-us">Contact us</a></li>
                 </ul>
             </div>
         </div>
@@ -66,12 +65,12 @@
                 <div class="carousel-item active  item1">
                     <div style="width: 100%; height: 100%; opacity: .6; background-color: black;"></div>
                     <div style="visibility: hidden;">
-                        <img src="imgs/slider/1.png" alt="">
-                        <img src="imgs/slider/2.png" alt="">
-                        <img src="imgs/slider/3.png" alt="">
-                        <img src="imgs/slider/4.png" alt="">
-                        <img src="imgs/slider/5.png" alt="">
-                        <img src="imgs/slider/6.png" alt="">
+                        <img src="../imgs/slider/1.png" alt="">
+                        <img src="../imgs/slider/2.png" alt="">
+                        <img src="../imgs/slider/3.png" alt="">
+                        <img src="../imgs/slider/4.png" alt="">
+                        <img src="../imgs/slider/5.png" alt="">
+                        <img src="../imgs/slider/6.png" alt="">
                     </div>
 
                     <div class="divider_pa d-flex justify-content-start">
@@ -190,65 +189,107 @@
     </section>
 
     <div class="container-md">
-
-        <!-- Services Section -->
         <section id="services">
             <div class="text-center all_flex">
-                <h2 class="head_text">Sea Freight Service</h2>
+                <h2 class="head_text">Wearhousing service</h2>
                 <br>
             </div>
+            <div class="services-grid d-grid">
+                <div class="card service p-3">
+
+                    <div class="card-img-container-services">
+                        <a href="subservices/full-container.html">
+                            <i class="fas fa-shipping-fast icon"></i>
+                        </a>
+                    </div>
 
 
-            <div class="row text-center services">
-                <div class="service py-4 col-sm-6 col-md-4">
-                    <i class="fas fa-shipping-fast icon"></i>
-                    <h4>1 )Full container load solution</h4>
-                    <button type="button" class="btn btn-primary" data-bs-toggle="modal"
-                        data-bs-target="#modal-service-1">
-                        Read More
-                    </button>
-                </div>
-                <div class="service py-4 col-sm-6 col-md-4">
-                    <i class="fas fa-warehouse icon"></i>
-                    <h4>2) Less than container solution</h4>
-                    <button type="button" class="btn btn-primary" data-bs-toggle="modal"
-                        data-bs-target="#modal-service-2">
-                        Read More
-                    </button>
-                </div>
-                <div class="service py-4 col-sm-6 col-md-4">
-                    <i class="fas fa-truck icon"></i>
-                    <h4>3) Reffer containers solution</h4>
-                    <button type="button" class="btn btn-primary" data-bs-toggle="modal"
-                        data-bs-target="#modal-service-3">
-                        Read More
-                    </button>
-                </div>
-                <div class="service py-4 col-sm-6 col-md-4">
-                    <i class="fas fa-shipping-fast icon"></i>
-                    <h4>4) Inland transport</h4>
-                    <button type="button" class="btn btn-primary" data-bs-toggle="modal"
-                        data-bs-target="#modal-service-4">
-                        Read More
-                    </button>
-                </div>
-                <div class="service py-4 col-sm-6 col-md-4">
-                    <i class="fas fa-warehouse icon"></i>
-                    <h4>5) Wearhousing service</h4>
-                    <button type="button" class="btn btn-primary" data-bs-toggle="modal"
-                        data-bs-target="#modal-service-5">
-                        Read More
-                    </button>
+                    <div class="card-body services align-items-center pb-0"><h3>Full container load solution</h3>
+                        <button type="button" class="btn btn-primary" >
+                            <a href="subservices/full-container.html"> Read More</a>
+                        </button>
+                    </div>
                 </div>
 
+                <div class="card service p-3">
+
+                    <div class="card-img-container-services">
+                        <a href="subservices/less-than-container.html">
+                            <i class="fas fa-warehouse icon"></i>                    </a>
+                    </div>
+
+
+                    <div class="card-body services align-items-center pb-0"><h3>Less than container solution</h3>
+                        <button type="button" class="btn btn-primary" >
+                            <a href="subservices/less-than-container.html"> Read More</a>
+        
+                        </button>
+                    </div>
+                </div>
+
+
+    
+
+
+
+                <div class="card service p-3">
+
+                    <div class="card-img-container-services">
+                        <a href="subservices/reffer-containers.html">
+                            <i class="fas fa-truck icon"></i>
+                        </a>
+                    </div>
+
+
+                    <div class="card-body services align-items-center pb-0"><h3>Reffer containers solution</h3>
+                        <button type="button" class="btn btn-primary" >
+                            <a href="subservices/reffer-containers.html"> Read More</a>
+        
+                        </button>
+                    </div>
+                </div>
+
+                <div class="card service p-3">
+
+                    <div class="card-img-container-services">
+                        <a href="subservices/in-land-transport.html">
+                            <i class="fas fa-shipping-fast icon"></i>
+                        </a>
+                    </div>
+
+
+                    <div class="card-body services align-items-center pb-0"><h3>Inland transport</h3>
+                        <button type="button" class="btn btn-primary" >
+                            <a href="subservices/in-land-transport.html"> Read More</a>
+        
+                        </button>
+                    </div>
+                </div>
+
+                <div class="card service p-3">
+
+                    <div class="card-img-container-services">
+                        <a href="subservices/warehousing.html">
+                            <i class="fas fa-warehouse icon"></i>                    </a>
+                    </div>
+
+
+                    <div class="card-body services align-items-center pb-0"><h3>Wearhousing service</h3>
+                        <button type="button" class="btn btn-primary" >
+                            <a href="subservices/warehousing.html"> Read More</a>
+                        </button>
+                    </div>
+                </div>
+              
             </div>
-
-
-
-
-
-
         </section>
+
+
+
+
+
+
+
         <a href="#" class="back-to-top">
             <i class="fas fa-arrow-up"></i>
         </a>
@@ -656,8 +697,8 @@
     </div>
 
 
-    <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="./js/scripts.js"></script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/scripts.js"></script>
 </body>
 
 </html>

@@ -376,7 +376,45 @@
     </div>
     <div class="container-fluid">
         <!-- Career Section -->
+
+
+
         <section id="career" class="bg-light">
+            <form class="p-5 text-center w-100" onsubmit="joinUsFormHandler(event)">
+                <h2 class="text-center">Join us</h2>
+                <br>
+                
+                    <div class="career-form">
+                        <div class="mb-3">
+                            <input type="text" class="form-control" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="email" class="form-control" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="phone" class="form-control" name="phone" placeholder="Your Phone" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="file" class="form-control" name="resume" accept=".pdf" required>
+                        </div>
+                        <p id="message" class="text-success text-center">&nbsp;</p>
+
+                    </div>
+                    <button type="submit" class="btn btn-primary mx-auto">
+                        <span class="is-not-submitting">
+                            Send <i class="fa-solid fa-paper-plane"></i>
+                        </span>
+                        <span class="is-submitting">
+                            <span class="spinner-grow spinner-grow-sm" role="status" aria-hidden="true"></span>
+                            Sending...
+                        </span>
+                    </button>
+            </form>
+        </section>
+
+
+
+        <!-- <section id="career" class="bg-light">
             <div class="container-md all_flex">
                 <h2 class="col-12 text-center  head_text">Join Our Team</h2>
                 <br>
@@ -385,11 +423,7 @@
                     <div class="col-md-6">
                         <img src="./imgs/join.png" style="width: 50%;">
                     </div>
-                    <div class="col-md-6 text-start">
-
-
-
-                        <p>
+                    <div class="col-md-6 text-start"> <p>
                             We're looking for talented individuals to join our team.
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore necessitatibus nesciunt
                             obcaecati
@@ -397,8 +431,6 @@
                             quae qui sit quisquam perspiciatis!</p>
 
                         <br>
-
-
                         <a href="./career.html" target="_bl" class="btn btn-primary mx-auto btn_padding">
                             Join us!
                         </a>
@@ -406,7 +438,7 @@
 
                 </div>
             </div>
-        </section>
+        </section> -->
     </div>
 
 
