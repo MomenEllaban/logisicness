@@ -547,6 +547,17 @@ ul.Service_ul li:before {
 }
 }
 
+
+@media screen and (max-width: 575px) {
+  .row_contentus {
+      align-content: center;
+      justify-content: center;
+      align-items: flex-start !important;
+  }
+}
+
+
+
 .item1{
   background-image: url('../imgs/slider/1.png');
 }
