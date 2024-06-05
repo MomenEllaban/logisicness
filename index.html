@@ -33,8 +33,9 @@
 
 
             </a>
-            <button class="navbar-toggler"  onclick="applyStyles()"  type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" onclick="applyStyles()" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
@@ -43,7 +44,7 @@
                     <li class="nav-item"><span class="nav-link" data-section="#about-us">About Us</span></li>
                     <li class="nav-item"><span class="nav-link" data-section="#services">Services</span></li>
                     <li class="nav-item"><span class="nav-link" data-section="#career">Career</span></li>
-                    <li class="nav-item"><span class="nav-link" data-section="#meet-us">Contact</span></li>
+                    <li class="nav-item"><span class="nav-link" data-section="#meet-us">Contact Us</span></li>
                 </ul>
             </div>
         </div>
@@ -255,7 +256,8 @@
                 <div class="card service">
 
                     <div class="card-img-container">
-                        <a href="./services/Sea-Freight.html"> <img src="./imgs/services/sea-freight-thumbnail.jpg" class="card-img-top" alt="...">
+                        <a href="./services/Sea-Freight.html"> <img src="./imgs/services/sea-freight-thumbnail.jpg"
+                                class="card-img-top" alt="...">
                         </a>
                     </div>
                     <div class="card-body">
@@ -273,8 +275,8 @@
                 <div class="card service">
                     <div class="card-img-container">
                         <a href="./services/air-freight.html">
-                        <img src="./imgs/services/air-freight-thumbnail.jpg" class="card-img-top" alt="...">
-                    </a>
+                            <img src="./imgs/services/air-freight-thumbnail.jpg" class="card-img-top" alt="...">
+                        </a>
                     </div>
 
                     <div class="card-body">
@@ -294,8 +296,8 @@
 
                     <div class="card-img-container">
                         <a href="./services/custom-clearance.html">
-                        <img src="./imgs/services/custom-clearance-thumbnail.jpg" class="card-img-top" alt="...">
-                    </a>
+                            <img src="./imgs/services/custom-clearance-thumbnail.jpg" class="card-img-top" alt="...">
+                        </a>
                     </div>
 
                     <div class="card-body">
@@ -314,8 +316,8 @@
 
                     <div class="card-img-container">
                         <a href="./services/in-land-transport.html">
-                        <img src="./imgs/services/in-land-transport-thumbnail.jpg" class="card-img-top" alt="...">
-                    </a>
+                            <img src="./imgs/services/in-land-transport-thumbnail.jpg" class="card-img-top" alt="...">
+                        </a>
                     </div>
 
                     <div class="card-body">
@@ -334,8 +336,8 @@
 
                     <div class="card-img-container">
                         <a href="./services/warehousing.html">
-                        <img src="./imgs/services/custom-clearance-thumbnail.jpg" class="card-img-top" alt="...">
-                    </a>
+                            <img src="./imgs/services/custom-clearance-thumbnail.jpg" class="card-img-top" alt="...">
+                        </a>
                     </div>
 
 
@@ -353,8 +355,8 @@
 
                     <div class="card-img-container">
                         <a href="./services/consulting.html">
-                        <img src="./imgs/services/sea-freight-thumbnail.jpg" class="card-img-top" alt="...">
-                    </a>
+                            <img src="./imgs/services/sea-freight-thumbnail.jpg" class="card-img-top" alt="...">
+                        </a>
                     </div>
 
 
@@ -383,32 +385,32 @@
             <form class="p-5 text-center w-100" onsubmit="joinUsFormHandler(event)">
                 <h2 class="text-center">Join us</h2>
                 <br>
-                
-                    <div class="career-form">
-                        <div class="mb-3">
-                            <input type="text" class="form-control" name="name" placeholder="Your Name" required>
-                        </div>
-                        <div class="mb-3">
-                            <input type="email" class="form-control" name="email" placeholder="Your Email" required>
-                        </div>
-                        <div class="mb-3">
-                            <input type="phone" class="form-control" name="phone" placeholder="Your Phone" required>
-                        </div>
-                        <div class="mb-3">
-                            <input type="file" class="form-control" name="resume" accept=".pdf" required>
-                        </div>
-                        <p id="message" class="text-success text-center">&nbsp;</p>
 
+                <div class="career-form">
+                    <div class="mb-3">
+                        <input type="text" class="form-control" name="name" placeholder="Your Name" required>
                     </div>
-                    <button type="submit" class="btn btn-primary mx-auto">
-                        <span class="is-not-submitting">
-                            Send <i class="fa-solid fa-paper-plane"></i>
-                        </span>
-                        <span class="is-submitting">
-                            <span class="spinner-grow spinner-grow-sm" role="status" aria-hidden="true"></span>
-                            Sending...
-                        </span>
-                    </button>
+                    <div class="mb-3">
+                        <input type="email" class="form-control" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="mb-3">
+                        <input type="phone" class="form-control" name="phone" placeholder="Your Phone" required>
+                    </div>
+                    <div class="mb-3">
+                        <input type="file" class="form-control" name="resume" accept=".pdf" required>
+                    </div>
+                    <p id="message" class="text-success text-center">&nbsp;</p>
+
+                </div>
+                <button type="submit" class="btn btn-primary mx-auto">
+                    <span class="is-not-submitting">
+                        Send <i class="fa-solid fa-paper-plane"></i>
+                    </span>
+                    <span class="is-submitting">
+                        <span class="spinner-grow spinner-grow-sm" role="status" aria-hidden="true"></span>
+                        Sending...
+                    </span>
+                </button>
             </form>
         </section>
 
@@ -446,68 +448,36 @@
         <!-- Meet Us Section -->
         <section id="meet-us">
             <div class="container-md all_flex">
-                <h2 class="col-12 text-center  head_text">Contact</h2>
+                <h2 class="col-12 text-center  head_text">Contact Us</h2>
                 <br>
-                <div class="row text-center align-items-start  ">
+                <div class="row text-center align-items-start  flex-md-row-reverse">
 
-
-                    <div class="col-md-4 pb-4  row_contentus">
-                       <a href="index.html"> <img src="imgs/logo/logo1.png" width="50%" alt=""></a>
-                        <span class="info_footer">
-                            Feugiat a ligula rutrum luctus primis ultrice nteger congue magna at pretium purus a pretium
-                            ligula rutrum and luctus
-                        </span>
-                        <h3>Social Info
-                        </h3>
-                        <div class="social-icons d-flex gap-4 justify-content-start">
-                            <span>
-                              <a href="Instagram: Logisticness"><i class="fa-brands fa-instagram"></i></a>
-                            </span>
-
-                            <span>
-                                <a href="linked in: logisticness global services"><i class="fa-brands fa-linkedin"></i></a>
-                           
-                            </span>
-                            <span>
-                              <a href="facebook: Logisticness">  <i class="fa-brands fa-facebook"></i></a>
-                            </span>
-                        </div>
-                    </div>
-
-
-                    <div class="col-md-4  col-sm-6 row_contentus align-items-center">
-                        <h3>Our Service</h3>
-                        <ul class=" Service_ul d-gri p-0">
-                            <li> <a href="services/Sea-Freight.html">Sea Freight</a></li>
-                            <li> <a href="services/air-freight.html">Air Freight</a>
-                            </li>
-                            <li><a href="services/Custom Clearance.html">Custom Clearance</a>
-                            </li>
-                            <li><a href="services/in-land-transport.html">in-land transport</a>
-                            </li>
-                            <li>
-                                <a href="services/warehousing.html"> warehousing</a>
-                            </li>
-                            <li>
-                                <a href="services/consulting.html">consulting</a>
-                            </li>
-                        </ul>
-
-                    </div>
-
-
-
-
-
-
-
-
-
-                    <div class="col-md-4 col-sm-6 row_contentus">
-                        <h3>Newsletter</h3>
+                    <div class="col-md-6  row_contentus">
+                        <h3>About the company</h3>
                         <span class="info_footer">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
                         </span>
+
+                        <div class="social-icons d-flex gap-4 justify-content-start">
+                            <span>
+                                <a href="Instagram: Logisticness"><i class="fa-brands fa-instagram"></i></a>
+                            </span>
+
+                            <span>
+                                <a href="linked in: logisticness global services"><i
+                                        class="fa-brands fa-linkedin"></i></a>
+
+                            </span>
+                            <span>
+                                <a href="facebook: Logisticness"> <i class="fa-brands fa-facebook"></i></a>
+                            </span>
+
+
+                        </div>
+
+
                         <div>
                             <div class="input-group mb-3">
                                 <input type="text" class="form-control" placeholder="Email Address"
@@ -517,6 +487,34 @@
                             </div>
                         </div>
                     </div>
+
+                    <div class="col-md-6 pb-4  row_contentus">
+                        <a href="index.html"> <img class="image_footer" src="imgs/logo/logo1.png"  alt=""></a>
+                      
+                        <div class="info_icons d-flex  justify-content-start">
+                            <div class="d-flex align-items-base" ><i class="fas fa-map-marked-alt"></i>
+                                <span>
+                                    17 zefal, muharam bek,
+                               
+                                 Alexandria 3rd floor, 
+                                 <br> Apatment number 5
+                                </span>
+                            </div>
+
+                       
+
+                            <div> <i class="fas fa-phone-alt"></i>
+                               <span> 01212251884</span>
+                            </div>
+                        
+
+                            <div> <i class="fas fa-envelope"></i> <span>info@logisticness.com</span>
+                            </div>
+
+                        </div>
+                    </div>
+
+                  
 
                 </div>
             </div>
