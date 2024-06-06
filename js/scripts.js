@@ -156,7 +156,7 @@ addEventListener("load", () => {
   document.querySelectorAll('#custom-nav-links .nav-link').forEach(navLink => {
     navLink.addEventListener('click', () => {
       document.querySelector('.navbar-collapse.collapse').classList.remove('show');
-      window.scrollBy(0, document.querySelector(navLink.dataset.section).getBoundingClientRect().top - 60);
+      window.scrollBy(0, document.querySelector(navLink.dataset.section).getBoundingClientRect().top - 55);
     })
   })
 
