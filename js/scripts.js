@@ -72,34 +72,15 @@ function toggleNavbarStyle() {
   if (scrollY > 170) {
     navbar.classList.remove("navbar-transparent");
     navbar.classList.add("navbar-sticky");
-    // navbar.classList.remove("nav-colored");
-    // navbarBrandSVG.setAttribute("viewBox", "0 0 1831 515");
-    navbarBrandSVG.setAttribute("viewBox", "280 515 1400 380");
     document.querySelector('.navbar-brand .logo_body').classList.remove('hidden')
     document.querySelector('.navbar-brand .logo_home').classList.add('hidden')
   } else {
     navbar.classList.remove("navbar-sticky");
     navbar.classList.add("navbar-transparent");
-    // navbar.classList.add("nav-colored");
-    navbarBrandSVG.setAttribute("viewBox", "0 0 1855 870");
     document.querySelector('.navbar-brand .logo_body').classList.add('hidden')
     document.querySelector('.navbar-brand .logo_home').classList.remove('hidden')
   }
-
-  //alternate
-  // navbar.classList.remove("navbar-transparent");
-  // navbar.classList.add("navbar-sticky");
 }
-
-
-
-
-
-
-
-/////////////////////////////////////////////////////////////////////////////
-////////////////////////// START EVENT LISTENERS ////////////////////////////
-/////////////////////////////////////////////////////////////////////////////
 
 function applyStyles() {
     setTimeout(() => {
@@ -113,46 +94,57 @@ function applyStyles() {
       }
     }, 380);
 }
-addEventListener("load", () => {
-  // addEventListener("DOMContentLoaded", () => {
 
+function activeSectionOnScroll() {
+  //Active section
+  const navbarListItems = document.querySelectorAll("ul#custom-nav-links > li.nav-item> .nav-link");
+  let currentSection;
+  document.querySelectorAll('section').forEach((section) => {
+    const sectionTop = section.offsetTop;
+    const sectionHeight = section.clientHeight;
+    section.classList.remove("active");
+    if (scrollY >= (sectionTop - sectionHeight / 3)) currentSection = section;
+  });
+  if (currentSection != undefined) {
+    navbarListItems.forEach((item) => {
+      currentSection.classList.add("active");
+      item.classList.remove("active");
+      if ('#' + currentSection.id === item.dataset.section) {
+        item.classList.add("active");
+      }
+      if (currentSection.id === '') {
+        navbarListItems[0].classList.add("active");
+      }
+    });
+  } else {
+    navbarListItems.forEach((item) => item.classList.remove("active"));
+  }
+}
+
+function showToTopArrow() {
+  // show or hide the (TO-TOP) arrow
+  document.querySelector(".back-to-top").className = `back-to-top ${window.scrollY > 300 ? "show" : ""}`;
+}
+
+/////////////////////////////////////////////////////////////////////////////
+////////////////////////// START EVENT LISTENERS ////////////////////////////
+/////////////////////////////////////////////////////////////////////////////
+
+addEventListener("load", () => {
   applyStyles();
+  activeSectionOnScroll();
+  showToTopArrow();
   addEventListener('resize', applyStyles);
   
   toggleNavbarStyle();
-  // toggleNavbarlog();
+
   addEventListener("scroll", () => {
     toggleNavbarStyle();
-
-    // show or hide the (TO-TOP) arrow
-    document.querySelector(".back-to-top").className = `back-to-top ${window.scrollY > 300 ? "show" : ""}`;
-
-    //Active section
-    const navbarListItems = document.querySelectorAll("ul#custom-nav-links > li.nav-item> .nav-link");
-    let currentSection;
-    document.querySelectorAll('section').forEach((section) => {
-      const sectionTop = section.offsetTop;
-      const sectionHeight = section.clientHeight;
-      section.classList.remove("active");
-      if (scrollY >= (sectionTop - sectionHeight / 3)) currentSection = section;
-    });
-    if (currentSection != undefined) {
-      navbarListItems.forEach((item) => {
-        currentSection.classList.add("active");
-        item.classList.remove("active");
-        if ('#' + currentSection.id === item.dataset.section) {
-          item.classList.add("active");
-        }
-        if (currentSection.id === '') {
-          navbarListItems[0].classList.add("active");
-        }
-      });
-    } else {
-      navbarListItems.forEach((item) => item.classList.remove("active"));
-    }
+    showToTopArrow();
+    activeSectionOnScroll();
   });
 
-  // 
+  // Navigate to sections programatically
   document.querySelectorAll('#custom-nav-links .nav-link').forEach(navLink => {
     navLink.addEventListener('click', () => {
       document.querySelector('.navbar-collapse.collapse').classList.remove('show');
@@ -175,10 +167,5 @@ addEventListener("load", () => {
     setTimeout(() => {
         document.querySelector('.loader-overlay').style.display = 'none';
     }, 2000);
-    // document.querySelector('.loader').style.opacity = 0;
-    // setTimeout(() => {
-    //   document.querySelector('.loader').style.display = 'none';
-    // }, 5000);
   } catch (error) { }
-
 });
