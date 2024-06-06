@@ -245,7 +245,7 @@ footer {
 section:not(#home) {
   margin-top: 2rem;
   padding-block: 1rem;
-  min-height: 91.2vh;
+  min-height: 91.62vh;
   display: flex;
   justify-content: center;
   align-items: center;
