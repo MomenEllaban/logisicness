@@ -379,69 +379,77 @@
     <div class="container-fluid">
         <!-- Career Section -->
 
+        <div class="container">
 
+        </div>
 
         <section id="career" class="bg-light">
-            <form class="p-5 text-center w-100" onsubmit="joinUsFormHandler(event)">
-                <h2 class="text-center">Join us</h2>
-                <br>
+            <h2 class="col-12 text-center  head_text">Career</h2>
 
-                <div class="career-form">
-                    <div class="mb-3">
-                        <input type="text" class="form-control" name="name" placeholder="Your Name" required>
-                    </div>
-                    <div class="mb-3">
-                        <input type="email" class="form-control" name="email" placeholder="Your Email" required>
-                    </div>
-                    <div class="mb-3">
-                        <input type="phone" class="form-control" name="phone" placeholder="Your Phone" required>
-                    </div>
-                    <div class="mb-3">
-                        <input type="file" class="form-control" name="resume" accept=".pdf" required>
-                    </div>
-                    
-                    <p id="message" class="text-success text-center">&nbsp;</p>
+            <br>
 
+
+
+
+            <div class="row w-100">
+
+                <div class="col-xs-12 col-sm-6">
+                    <div class="box">
+                        <form class="p-2 text-center w-100" onsubmit="joinUsFormHandler(event)">
+
+
+                            <div class="career-form">
+                                <div class="mb-3">
+                                    <input type="text" class="form-control" name="name" placeholder="Your Name"
+                                        required>
+                                </div>
+                                <div class="mb-3">
+                                    <input type="email" class="form-control" name="email" placeholder="Your Email"
+                                        required>
+                                </div>
+                                <div class="mb-3">
+                                    <input type="phone" class="form-control" name="phone" placeholder="Your Phone"
+                                        required>
+                                </div>
+                                <div class="mb-3 hidden">
+                                    <input type="file" class="form-control" name="resume" onchange="testChange(event)"
+                                        accept=".pdf" required>
+                                </div>
+                                <div class="input-group mb-3" style="cursor: pointer;" onclick="testClick(event)">
+                                    <span class="input-group-text" id="basic-addon1">Upload CV</span>
+                                    <input type="text" class="form-control mt-0" style="cursor: pointer;"
+                                        placeholder="No file chosen" readonly aria-describedby="basic-addon1">
+                                </div>
+
+                                <p id="message" class="text-success text-center">&nbsp;</p>
+
+                            </div>
+                            <button type="submit" class="btn btn-primary mx-auto">
+                                <span class="is-not-submitting">
+                                    Send <i class="fa-solid fa-paper-plane"></i>
+                                </span>
+                                <span class="is-submitting">
+                                    <span class="spinner-grow spinner-grow-sm" role="status" aria-hidden="true"></span>
+                                    Sending...
+                                </span>
+                            </button>
+                        </form>
+                    </div>
                 </div>
-                <button type="submit" class="btn btn-primary mx-auto">
-                    <span class="is-not-submitting">
-                        Send <i class="fa-solid fa-paper-plane"></i>
-                    </span>
-                    <span class="is-submitting">
-                        <span class="spinner-grow spinner-grow-sm" role="status" aria-hidden="true"></span>
-                        Sending...
-                    </span>
-                </button>
-            </form>
+
+                <div class="col-xs-12 col-sm-6">
+                    <div class="box">
+                        <img src="imgs/career.png" width="70%" alt="">
+                    </div>
+                </div>
+
+            </div>
+
+
         </section>
 
 
 
-        <!-- <section id="career" class="bg-light">
-            <div class="container-md all_flex">
-                <h2 class="col-12 text-center  head_text">Join Our Team</h2>
-                <br>
-
-                <div class="row text-center align-items-center gap-2 gap-md-0 flex-md-row-reverse">
-                    <div class="col-md-6">
-                        <img src="./imgs/join.png" style="width: 50%;">
-                    </div>
-                    <div class="col-md-6 text-start"> <p>
-                            We're looking for talented individuals to join our team.
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore necessitatibus nesciunt
-                            obcaecati
-                            perferendis impedit cumque cupiditate quod quas voluptates labore eveniet,
-                            quae qui sit quisquam perspiciatis!</p>
-
-                        <br>
-                        <a href="./career.html" target="_bl" class="btn btn-primary mx-auto btn_padding">
-                            Join us!
-                        </a>
-                    </div>
-
-                </div>
-            </div>
-        </section> -->
     </div>
 
 
@@ -490,32 +498,33 @@
                     </div>
 
                     <div class="col-md-6 pb-4  row_contentus">
-                        <a href="index.html"> <img class="image_footer" src="imgs/logo/logo1.png"  alt=""></a>
-                      
+                        <a href="index.html"> <img class="image_footer" src="imgs/logo/logo1.png" alt=""></a>
+
                         <div class="info_icons d-flex  justify-content-start">
-                            <div class="d-flex gap-2 align-items-base" ><i class="fas fa-map-marked-alt"></i>
+                            <div class="d-flex gap-2 align-items-base"><i class="fas fa-map-marked-alt"></i>
                                 <span>
                                     17 zefal, muharam bek,
-                               
-                                 Alexandria 3rd floor, 
-                                 <br> Apatment number 5
+
+                                    Alexandria 3rd floor,
+                                    <br> Apatment number 5
                                 </span>
                             </div>
 
-                       
+
 
                             <div class="d-flex gap-2 align-items-base"> <i class="fas fa-phone"></i>
-                               <span> 01212251884</span>
+                                <span> 01212251884</span>
                             </div>
-                        
 
-                            <div class="d-flex gap-2 align-items-base"> <i class="fas fa-envelope"></i> <span>info@logisticness.com</span>
+
+                            <div class="d-flex gap-2 align-items-base"> <i class="fas fa-envelope"></i>
+                                <span>info@logisticness.com</span>
                             </div>
 
                         </div>
                     </div>
 
-                  
+
 
                 </div>
             </div>
@@ -555,23 +564,72 @@
                             <div class="mb-3">
                                 <input type="phone" class="form-control" name="phone" placeholder="Your Phone" required>
                             </div>
-                            <div class="mb-3">
-                                <input type="file" class="form-control" name="resume" accept=".pdf" required>
+                            <div class="mb-3 hidden">
+                                <input type="file" class="form-control" name="resume" onchange="testChange(event)"
+                                    accept=".pdf" required>
                             </div>
+                            <div class="input-group mb-3" style="cursor: pointer;" onclick="testClick(event)">
+                                <span class="input-group-text" id="basic-addon1">Upload CV</span>
+                                <input type="text" class="form-control mt-0" style="cursor: pointer;"
+                                    placeholder="No file chosen" readonly aria-describedby="basic-addon1">
+                            </div>
+
+
+                            <script>
+                                function testClick(e) {
+                                    const fileInput = e.target.closest('form').querySelector('input[type="file"]');
+                                    const fileName = fileInput.files[0];
+                                    fileInput.click()
+                                }
+                                function testChange(e) {
+                                    const displayedFileInput = e.target.closest('form').querySelector('.input-group input');
+                                    const fileName = e.target.files[0];
+                                    displayedFileInput.value = fileName ? fileName.name : '';
+                                }
+                            </script>
+
                             <p id="message" class="text-success text-center">&nbsp;</p>
                         </div>
+
+
+                        <div class="career-form">
+                            <div class="mb-3">
+                                <input type="text" class="form-control" name="name" placeholder="Your Name" required>
+                            </div>
+                            <div class="mb-3">
+                                <input type="email" class="form-control" name="email" placeholder="Your Email" required>
+                            </div>
+                            <div class="mb-3">
+                                <input type="phone" class="form-control" name="phone" placeholder="Your Phone" required>
+                            </div>
+                            <div class="mb-3 hidden">
+                                <input type="file" class="form-control" name="resume" onchange="testChange(event)"
+                                    accept=".pdf" required>
+                            </div>
+                            <div class="input-group mb-3" style="cursor: pointer;" onclick="testClick(event)">
+                                <span class="input-group-text" id="basic-addon1">Upload CV</span>
+                                <input type="text" class="form-control mt-0" style="cursor: pointer;"
+                                    placeholder="No file chosen" readonly aria-describedby="basic-addon1">
+                            </div>
+                            <script>
+                                function testClick(e) {
+                                    const fileInput = e.target.closest('form').querySelector('input[type="file"]');
+                                    const fileName = fileInput.files[0];
+                                    fileInput.click()
+                                }
+                                function testChange(e) {
+                                    const displayedFileInput = e.target.closest('form').querySelector('.input-group input');
+                                    const fileName = e.target.files[0];
+                                    displayedFileInput.value = fileName ? fileName.name : '';
+                                }
+                            </script>
+                            <p id="message" class="text-success text-center">&nbsp;</p>
+
+                        </div>
+
+
                     </div>
-                    <div class="modal-footer">
-                        <button type="submit" class="btn btn-primary mx-auto">
-                            <span class="is-not-submitting">
-                                Send <i class="fa-solid fa-paper-plane"></i>
-                            </span>
-                            <span class="is-submitting">
-                                <span class="spinner-grow spinner-grow-sm" role="status" aria-hidden="true"></span>
-                                Sending...
-                            </span>
-                        </button>
-                    </div>
+
                 </form>
             </div>
         </div>
@@ -631,6 +689,21 @@
 
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="./js/scripts.js"></script>
+
+    <script>
+        function testClick(e) {
+            const fileInput = e.target.closest('form').querySelector('input[type="file"]');
+            const fileName = fileInput.files[0];
+            fileInput.click()
+        }
+        function testChange(e) {
+            const displayedFileInput = e.target.closest('form').querySelector('.input-group input');
+            const fileName = e.target.files[0];
+            displayedFileInput.value = fileName ? fileName.name : '';
+        }
+    </script>
+
+
 </body>
 
 </html>
