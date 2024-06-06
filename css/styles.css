@@ -631,3 +631,7 @@ li {
   /* border: 2px #ccc solid; */
   color: #fff;
 }
+
+.navbar-brand {
+  width: fit-content;
+}
