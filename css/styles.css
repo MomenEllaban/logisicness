@@ -51,7 +51,7 @@ a {
 
 .navbar-brand img {
   /* height: 80px; */
-  width: 10rem;
+  width: 8rem;
 }
 
 .navbar-transparent .navbar-brand img {
@@ -547,18 +547,6 @@ ul.Service_ul li:before {
 
   }
 
-
-
-
-
-
-
-
-
-
-
-
-
 }
 
 @media screen and (max-width: 575px) {
@@ -567,6 +555,12 @@ ul.Service_ul li:before {
     justify-content: center;
     /* align-items: flex-start !important; */
   }
+  .navbar-brand img {
+    /* height: 80px; */
+    width: 7rem;
+  }
+
+  
 }
 
 .item1 {
