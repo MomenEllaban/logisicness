@@ -78,7 +78,7 @@ a {
 }
 
 .navbar-sticky {
-  background-color: var(--primary-color);
+  background-color: var(--primary-color) !important;
 }
 
 #custom-nav-links .nav-link {
@@ -243,9 +243,9 @@ footer {
 }
 
 section:not(#home) {
-  margin-top: 4rem;
+  margin-top: 2rem;
   padding-block: 1rem;
-  min-height: 79vh;
+  min-height: 91.2vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -578,7 +578,7 @@ ul.Service_ul li:before {
 }
 
 .nav-colored {
-  background-color: rgba(0, 0, 0, 0.26);
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 .subcateogry h4 {
