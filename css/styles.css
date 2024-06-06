@@ -644,3 +644,26 @@ li {
   padding: 0%;
 }
 
+
+.carousel_caption_sty {
+  text-align: start;
+  top: 48.25%;
+  transform: translateY(-50%);
+  /* right: unset; */
+  left: 0%;
+  padding-top: 1rem;
+  padding-left: 15%;
+  padding-right: 12%;
+
+  /* transform: translateY(60%); */
+  /* z-index: 1; */
+  /* font-weight: 800; */
+  position: absolute;
+  width: 100%;
+  /* font-size: 1.6rem; */
+  color: rgb(241, 223, 223) !important;
+  /* padding: 1rem; */
+  /* background-color: rgba(230, 240, 248,0.4) ; */
+  border-radius: 1rem;
+}
+
