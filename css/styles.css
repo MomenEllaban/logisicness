@@ -480,16 +480,28 @@ ul.Service_ul li:before {
   overflow: hidden;
 }
 
-.services-grid .card-body .btn a {
+/* .services-grid .card-body .btn a {
+  position: relative;
+  z-index: 1;
+  color: var(--secondary-color);
+  text-decoration: none;
+} */
+
+.services-grid .card-body .btn span {
   position: relative;
   z-index: 1;
   color: var(--secondary-color);
   text-decoration: none;
 }
 
-.services-grid .card-body .btn:hover a {
+.services-grid .card-body .btn:hover span {
   color: black;
 }
+
+
+/* .services-grid .card-body .btn:hover a {
+  color: black;
+} */
 
 .services-grid .card-body .btn::before {
   position: absolute;
@@ -633,7 +645,7 @@ li {
   background-color: #008cff6b;
   background-color: #00a2ff6e;
   background-color: #00c38f88;
-  background-color: #c7d3cf;
+  background-color: #c7d3cf21;
 }
 
 #meet-us{
