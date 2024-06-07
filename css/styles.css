@@ -641,6 +641,14 @@ li {
   background-position: 25% 75%;
 }
 
+@media screen and (max-width: 1077px) {
+  #meet-us {
+    background-position: 75% 78%;
+  }
+}
+
+
+
 .container-fluid{
   padding: 0%;
 }
