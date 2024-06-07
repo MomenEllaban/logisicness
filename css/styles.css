@@ -1,5 +1,6 @@
 :root {
-  --primary-color: #1024ff;
+  --primary-color: #5f6dfd;
+  /* --primary-color: #1024ff; */
   --secondary-color: white;
 }
 .hidden {
@@ -52,7 +53,7 @@ a {
 
 .navbar-brand img {
   /* height: 80px; */
-  width: 8rem;
+  width: 7rem;
 }
 
 .navbar-transparent .navbar-brand img {
@@ -632,7 +633,7 @@ li {
   background-color: #008cff6b;
   background-color: #00a2ff6e;
   background-color: #00c38f88;
-  background-color: #c7d3cf21;
+  background-color: #c7d3cf;
 }
 
 #meet-us{
