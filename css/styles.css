@@ -200,7 +200,7 @@ footer {
 }
 
 section:not(#home) {
-  padding-block: 5rem 1rem;
+  padding-block: 5rem ;
   min-height: 91.62vh;
   display: flex;
   justify-content: center;
