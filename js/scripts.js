@@ -64,19 +64,12 @@ function joinUsFormHandler(e) {
 }
 
 function toggleNavbarStyle() {
-  // Make the navbar sticky and change color on scroll
-  const navbar = document.querySelector(".navbar");
-
-  // comment bellow
-  const navbarBrandSVG = document.querySelector(".navbar .navbar-brand>img");
   if (scrollY > 170) {
-    navbar.classList.remove("navbar-transparent");
-    navbar.classList.add("navbar-sticky");
+    document.querySelector(".navbar").classList.remove("navbar-transparent");
     document.querySelector('.navbar-brand .logo_body').classList.remove('hidden')
     document.querySelector('.navbar-brand .logo_home').classList.add('hidden')
   } else {
-    navbar.classList.remove("navbar-sticky");
-    navbar.classList.add("navbar-transparent");
+    document.querySelector(".navbar").classList.add("navbar-transparent");
     document.querySelector('.navbar-brand .logo_body').classList.add('hidden')
     document.querySelector('.navbar-brand .logo_home').classList.remove('hidden')
   }
@@ -96,20 +89,17 @@ function applyStyles() {
 }
 
 function activeSectionOnScroll() {
-  //Active section
   const navbarListItems = document.querySelectorAll("ul#custom-nav-links > li.nav-item> .nav-link");
   let currentSection;
   document.querySelectorAll('section').forEach((section) => {
     const sectionTop = section.offsetTop;
     const sectionHeight = section.clientHeight;
-    section.classList.remove("active");
     if (scrollY >= (sectionTop - sectionHeight / 3)) currentSection = section;
   });
   if (currentSection != undefined) {
     navbarListItems.forEach((item) => {
-      currentSection.classList.add("active");
       item.classList.remove("active");
-      if ('#' + currentSection.id === item.dataset.section) {
+      if (currentSection.id === item.href.split('#')[1]) {
         item.classList.add("active");
       }
       if (currentSection.id === '') {
@@ -122,7 +112,6 @@ function activeSectionOnScroll() {
 }
 
 function showToTopArrow() {
-  // show or hide the (TO-TOP) arrow
   document.querySelector(".back-to-top").className = `back-to-top ${window.scrollY > 300 ? "show" : ""}`;
 }
 
@@ -143,14 +132,6 @@ addEventListener("load", () => {
     showToTopArrow();
     activeSectionOnScroll();
   });
-
-  // Navigate to sections programatically
-  document.querySelectorAll('#custom-nav-links .nav-link').forEach(navLink => {
-    navLink.addEventListener('click', () => {
-      document.querySelector('.navbar-collapse.collapse').classList.remove('show');
-      window.scrollBy(0, document.querySelector(navLink.dataset.section).getBoundingClientRect().top - 55);
-    })
-  })
 
   // move to the next section arrow on the header
   document
