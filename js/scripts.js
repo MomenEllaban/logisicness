@@ -132,7 +132,13 @@ addEventListener("load", () => {
     showToTopArrow();
     activeSectionOnScroll();
   });
-
+  document.querySelectorAll("ul#custom-nav-links > li.nav-item> .nav-link").forEach(e => {
+    e.addEventListener('click', () => {
+      if (window.matchMedia('(max-width: 991px)').matches) {
+        e.closest('.navbar').querySelector('.navbar-toggler').click()
+      }
+    })
+  })
   // move to the next section arrow on the header
   document
     .querySelector("#scroll-down")
