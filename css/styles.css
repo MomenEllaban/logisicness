@@ -28,6 +28,9 @@ a {
   transition: background-color 0.5s;
   /* min-height: 60px; */
   padding: 0.5rem;
+  /* padding: 0 0.5rem; */
+
+  
 }
 
 .navbar .nav-link {
@@ -479,6 +482,7 @@ ul.Service_ul li:before {
   .navbar {
     /* padding: 0; */
     /* min-height: 60px; */
+    padding:  0.2rem 0.5rem;
 
   }
 
