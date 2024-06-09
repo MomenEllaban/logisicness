@@ -52,7 +52,7 @@ a {
 }
 
 .navbar-brand img {
-  width: 7rem;
+  width: 6rem;
 }
 
 .navbar-transparent {
@@ -478,7 +478,7 @@ ul.Service_ul li:before {
     justify-content: center;
   }
   .navbar-brand img {
-    width: 7rem;
+    width: 5rem;
   }
 }
 
